@@ -35,11 +35,12 @@ const tweetsArray = [
 ];
 
 function App() {
+  const allTweets = tweetsArray.map(element => <Tweet tweet={element}/>)
   return (
     <div className="App">
-      <Tweet />
+      {allTweets}
     </div>
-  );
+  )
 }
 
 export default App;
